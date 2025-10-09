@@ -1,0 +1,120 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sworup Shakya - Frontend Developer Resume
+% Version 3.1
+% This resume is formatted using a custom 'resume.cls' class file, which is included in the repository.
+% To compile this document, ensure 'resume.cls' is in the same directory as this .tex file.
+% You can find common versions of this file on Overleaf or other LaTeX template galleries, but the one used here is customized.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{ragged2e} % For \raggedright in summary
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry} % Document margins 
+\hypersetup{hidelinks} % For clickable links
+ 
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% --- HEADER INFORMATION ---
+\name{Sworup Shakya}
+\address{+1(224) 527-0688 \\ Elk Grove Village, IL, USA} 
+\address{\href{mailto:career@sworup.dev}{career@sworup.dev} \\ \href{https://linkedin.com/in/sworup-shakya}{linkedin.com/in/sworup-shakya} \\ \href{https://github.com/sworup}{github.com/sworup} \\ \href{https://www.sworup.dev}{sworup.dev}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Professional Summary}
+{\raggedright
+Experienced \textbf{Lead Software Engineer} with a strong background in frontend and backend development, specializing in creating scalable web applications for enterprise systems. Proven ability to lead teams in designing and implementing high-quality web applications, including for Monotype's enterprise font management platform and the modernization of a pharmaceutical logistics mobile application. Proficient in modern \textbf{JavaScript frameworks and libraries (React, Vue.js, React Native, Redux), Node.js, and database management}. Available for contract engagements on a \textit{Corp-to-Corp (C2C)} basis.
+\par}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Skills}
+\begin{tabular}{ @{} >{\bfseries}p{0.22\textwidth} @{\hspace{4ex}} p{0.66\textwidth} }
+  Frontend & JavaScript (ES6+), TypeScript, React, Vue.js, React Native, Redux, Tailwind CSS, Webpack, Vite \\
+  Backend & Node.js, Express, REST APIs, GraphQL, PHP \\
+  Databases & PostgreSQL, MySQL, MongoDB, Redis \\
+  Cloud \& DevOps & Docker, CI/CD \\
+  Methodologies & Agile/SCRUM, System Design, Component-Driven Development \\
+\end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+
+\textbf{Lead Software Engineer} \hfill Feb 2023 - July 2025 \\
+\href{https://uba-solutions.com/}{UBA Solutions Pvt. Ltd.} / \href{https://www.monotype.com/}{Monotype} \hfill \textit{Full-time(Hybrid)}
+ \begin{itemize}
+    \itemsep -3pt {}
+    \item Lead a team with frontend and backend developers and QA, in the design and implementation of high-quality, scalable web applications for \href{https://www.monotype.com/}{Monotype Fonts(MTF)}'s enterprise font management and distribution platform, serving a global user base.
+     \item Revamped the user interface for the \href{https://fontplatform.monotype.com/}{Monotype Foundry Platform (MFP)} by designing and implementing an expanded site navigation system, fonts upload and consumption interfaces, related fonts management, and a new post-login dashboard. Migrated multiple components from \textbf{Vue 2} to \textbf{Vue 3} and established migration patterns and testing practices for remaining component upgrades. Delivered measurable improvements in UX, application performance, and security, aligning the platform with current industry standards.
+     \item Improved frontend application load times by researching and implementing an advanced caching strategy for JavaScript and CSS assets using Vite that improved the CLS (Cumulative Layout Shift) and LCP (Largest Contentful Paint) score of the MTF enterprise site, improving load time by more than 80\%.
+     \item Other full-stack work included:
+      \begin{itemize}
+        \item Engineered the backend and frontend services for a font tiering feature, enabling the categorization and display of fonts based on complexity and cost within the enterprise platform. Implemented the necessary business logic and data transformations to support this feature. This involved designing RESTful API endpoints, database schema modifications, and creating intuitive UI components to enhance user experience. Stacks included \textbf{Nuxt.js, Node.js, Express, MongoDB}.
+        \item Engineered a system to automatically sync fonts for clients with tens of thousands of font files onto remote server farms. Integrated multiple micro-services and optimized the process to handle large data volumes efficiently. Stacks included \textbf{Node.js, Express, MongoDB, RabbitMQ, MySQL}.
+        \item Took ownership of important parts the enterprise side of ETL(Extract, Transform, Load) system of MTF. The key responsibilities were to make sure the data coming in from various sources such as user upload and PIM (Product Information Management) system were getting to the presentation layer and to other sections such as ADS (Asset Delivery System) etc. correctly.
+        \item Upgraded, cleaned up and optimized more than 26+ backend services' \textbf{Node} version and dependencies to improve performance, scalability, and maintainability. Refactored legacy code, implemented best practices, and introduced modern design patterns to enhance the overall quality of the codebase.
+        \item Upgraded the definition and format of CSS properties storage in the system to the current industry standard, updating backend and frontend services, ETL and database schemas to ensure compatibility third party services.
+        \item Built multiple POC (Proof of Concept) prototypes including a modernization of the AuthZ and AuthN as well as Single Sign-On (SSO) system of MTF transitining from Monolith to Micro-services. Stacks includes \textbf{.NET Core 8, MongoDB, AWS Lambda Authorizer}.
+      \end{itemize}
+ \end{itemize}
+ 
+\textbf{Senior Software Developer} \hfill Aug 2018 - Feb 2023 \\
+\href{https://sussol.net/}{Sustainable Solutions (NZ) Ltd.} \hfill \textit{Full-Time(Onsite)}
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item Modernized the flagship offline first, sync-able and optimized for android tablets, pharmaceutical logistics mobile application, \href{https://msupply.org.nz/mobile/}{mSupply Mobile}, by leading a full-stack upgrade using \textbf{React Native, Redux, and RealmDB}, enhancing both security and performance.
+     \item Architected frontend components for a custom GraphQL API, \href{https://docs.conforma.nz/docs/about/introduction/}{Conforma}, to support the creation of complex, dynamic forms, improving data accuracy and collection efficiency.
+     \item Built multiple standalone companion applications for data collection and reporting using \textbf{React, Redux, MySQL, PostgreSQL, Grafana and Tailwind CSS}, which streamlined data processes and enhanced reporting capabilities.
+     \item Maintained and enhanced a customized \textbf{Grafana} fork using \textbf{Go and React}, building custom plugins for advanced data visualization and client-side reporting.
+     \item Contributed to flagship desktop application, \href{https://msupply.org.nz/}{mSupply Desktop}, a pharmaceutical logistics platform and supply chain management system, by developing new features and optimizing existing functionalities using database first \textbf{\href{https://us.4d.com/}{4D}} language.
+ \end{itemize}
+
+\textbf{Senior Software Developer} \hfill Aug 2015 - Aug 2018 \\
+\href{https://www.zimris.com/}{Zimris Technologies} \hfill \textit{Full-Time(Onsite)}
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item Led a 3-person development team and managed the full project lifecycle for various client-facing web applications. The main task was a full modernization of a name suggestion website and its online forum built using \textbf{Vue.js, PHP (Laravel Lumen) and MySQL}.
+     \item Developed a multitenant website system named \href{https://cloudcarpenter.com/}{CloudCarpenter}, which generated CMS sites for different clients, allowing for easy content management and customization. Built using \textbf{JQuery, PHP (Symfony Framework) and MySQL}, this system allowed the client to spin up CMS sites on demand with ease, saving time and effort.
+ \end{itemize}
+
+ \textbf{Early Career Highlights} \hfill 2007 - 2015 
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item \textbf{Biz Technologies Pvt. Ltd., Senior Software Developer (October 2014 – July 2015)}: Developed full-featured travel booking portals using PHP (CodeIgniter) and JQuery.
+     \item \textbf{Wise Yak Solutions Pvt. Ltd., Senior Web Developer (ASP.NET) (July 2013 – September 2014)}: Built custom modules, plugins, and themes for the Orchard CMS platform using \textbf{ASP.NET MVC4, JQuery}.
+     \item \textbf{Hitechvalley iNet Pvt. Ltd., Senior Software Developer (October 2011 – June 2013)}: Developed CMS and portal websites using PHP CodeIgniter, CakePHP frameworks and interactive Flash/ActionScript applications.
+     \item \textbf{\href{https://grafioffshorenepal.com/news/online-homework-platform-bingel-be/}{Grafi Offshore Nepal}, Senior ActionScript/Flash Developer (January 2010 – September 2011)}: Developed a core game engine and multiple games in ActionScript 3 for a large-scale, gamified e-learning platform called \href{https://www.vanin.be/lager-onderwijs/bingel/}{Bingel.be}.
+     \item \textbf{Hitechvalley iNet Pvt. Ltd., Senior Flash/Software Developer (November 2008 – November 2009)}: Developed interactive Flash ActionScript websites and expanded skillset to include PHP, JavaScript, and CMS platforms like WordPress and PyroCMS.
+     \item \textbf{Freelance Flash Developer (January 2006 – November 2008)}: Created custom Flash/ActionScript applications and websites for various clients, honing skills in client communication and project management.
+ \end{itemize}
+ 
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+{\bf Bachelor of Information Technology (BIT)} \textit{CGPA: 3.03} \hfill {2007} \\
+\href{https://kist.edu.np/program/bit}{KIST College of Information Technology (KIST-CIT)} \hfill {\textit{Affiliated to \href{https://www.purbanchaluniversity.edu.np/}{Purvanchal University, Nepal.}}} \\
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Additional Information} 
+\begin{itemize}
+    \itemsep -3pt {}
+    \item \textbf{Publications:} Technical Reviewer for "Mastering PHP Design Patterns" by Junade Ali (2016).
+    \item \textbf{Languages:} English (Full Professional), Nepali (Native), Hindi (Conversational Proficiency).
+\end{itemize}
+\end{rSection}
+
+\end{document}

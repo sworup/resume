@@ -1,0 +1,11 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+# PDF output
+*.pdf
+
+# macOS specific
+.DS_Store
