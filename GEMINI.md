@@ -1,18 +1,28 @@
 # Project: LaTeX Resume for Sworup Shakya
 
 This project contains the LaTeX source for Sworup Shakya's resume. The goal is to produce a professional, ATS-friendly PDF resume.
+There are different versions of the resume tailored for different roles.
 
 ## Structure
 
+- `master-cv/`: This directory contains the master version of the resume (`SShakya-Master.tex`) which includes all experiences and projects.
 - `frontend/`: This directory contains the main LaTeX file (`sshakya-Frontend.tex`) and the custom class file (`resume.cls`). This is the preferred format.
 - `full-stack/`: This directory contains the full-stack version of the resume (`SShakya-FullStack.tex`).
 
 ## Compiling the Resume
 
 To compile the resume and generate a PDF, you will need a LaTeX distribution installed on your system (e.g., TeX Live, MiKTeX).
+You can use the provided `Makefile` to build all versions at once by running `make`.
+
+Alternatively, you can compile them individually:
 
 1.  Navigate to the desired directory (`frontend/` or `full-stack/`).
 2.  Run the following command to generate the PDF:
+
+    For the Master version:
+    ```bash
+    pdflatex SShakya-Master.tex
+    ```
 
     For the Frontend version:
     ```bash

@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sworup Shakya - Frontend Developer Resume
+% Version 3.1
+% This resume is formatted using a custom 'resume.cls' class file, which is included in the repository.
+% To compile this document, ensure 'resume.cls' is in the same directory as this .tex file.
+% You can find common versions of this file on Overleaf or other LaTeX template galleries, but the one used here is customized.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume} % Use the custom resume.cls style
+
+% --- HEADER INFORMATION ---
+\name{Sworup Shakya}
+\address{+1(224) 527-0688 \\ Elk Grove Village, IL, USA} 
+\address{\href{mailto:career@sworup.dev}{career@sworup.dev} \\ \href{https://linkedin.com/in/sworup-shakya}{linkedin.com/in/sworup-shakya} \\ \href{https://github.com/sworup}{github.com/sworup} \\ \href{https://www.sworup.dev}{sworup.dev}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Professional Summary}
+{\raggedright
+Senior \textbf{Full-Stack Software Engineer} with 15+ years of experience architecting and deploying enterprise-scale systems for complex domains, including global \textit{font licensing platform} and \textit{medical supply chain management} software. Proven expert in modernizing sophisticated systems using \textbf{Node.js}, \textbf{React} and \textbf{Vue.js}, with deep experience in microservice architecture, large-scale ETL pipelines, and frontend performance optimization. A technical leader dedicated to delivering robust, scalable, and high-performance software solutions.
+\par}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Core Competencies \& Skills}
+\begin{tabular}{ @{} >{\bfseries}p{0.22\textwidth} @{\hspace{4ex}} p{0.66\textwidth} }
+  Core Competencies & Full-Stack Development, Microservice Architecture, System Design, Data Integrity \& ETL, API Design (REST \& GraphQL), Frontend \& Backend Performance Optimization, Agile/SCRUM \\
+  Frontend & JavaScript (ES6+), TypeScript, React, Vue.js, React Native, Redux, Tailwind CSS, Webpack, Vite \\
+  Backend & Node.js, Express, PHP \\
+  Databases & PostgreSQL, MySQL, MongoDB, Redis \\
+  Cloud \& DevOps & Docker, CI/CD \\
+\end{tabular}
+\end{rSection}
+ 
+%----------------------------------------------------------------------------------------
+%   EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+
+  \jobEntry{Lead Software Engineer}{Feb 2023 - July 2025}{UBA Solutions Pvt. Ltd. / Monotype}{Hybrid}
+Led a full-stack team of frontend/backend developers and QA to architect and deliver scalable solutions for Monotype's global enterprise font licensing and management platform.
+
+\vspace{5pt}
+\noindent\textbf{Backend Architecture \& Data Integrity (Node.js, ETL, Microservices)}
+\begin{itemize}
+    \item \textbf{Reduced data errors} and \textbf{increased data processing speed} by identifying/resolving issues and refactoring major sections of the ETL pipeline (\textbf{Node.js}, RabbitMQ) spanning \textbf{8+ microservices}.
+    \item Spearheaded the \textbf{migration of 26+ microservices} to the latest \textbf{Node.js} LTS version, resolving critical vulnerabilities and modernizing the core backend framework.
+    \item \textbf{Owned data integrity} for tens of thousands of daily records, unblocking critical platform migration and modernization by ensuring data propagated efficiently across microservices.
+    \item Directed a large-scale data integrity initiative; cleaned, \textbf{migrated, gathered, and soft-deleted millions of ETL records} to ensure platform-wide consistency and eliminate data conflicts.
+\end{itemize}
+
+\vspace{5pt}
+\noindent\textbf{Full-Stack Feature Development \& System Design}
+\begin{itemize}
+    \item Engineered full-stack services (\textbf{Nuxt.js, Node.js, MongoDB}) for key platform features, including a new font tiering system and a 'Related Families' UI, designing all REST APIs, database schemas, and UI components.
+    \item Engineered a system to automatically sync tens of thousands of client font files to remote server farms, integrating multiple microservices to handle large data volumes.
+    \item Designed and delivered a successful Proof of Concept (POC) for a zero-trust, microservice-based authentication system using \textbf{AWS Lambda} and \textbf{.NET Core}.
+\end{itemize}
+
+\vspace{5pt}
+\noindent\textbf{Frontend Performance \& Modernization (Vue.js, Vite)}
+\begin{itemize}
+    \item Directed the UI modernization of the Monotype Fonts (MTF) and Monotype Foundry Platform (MFP), migrating 20+ core components and multiple pages from \textbf{Vue 2} to \textbf{Vue 3}.
+    \item Established the migration patterns and reusable base component library \textbf{adopted by other squads}, accelerating their development and modernization timelines.
+    \item Implemented a progressive data/asset loading strategy in \textbf{Vue 3}, \textbf{increasing page load speeds by over 80\%} on complex, license-based navigation and library systems.
+    \item Achieved \textbf{>90\% frontend performance increase} by identifying critical cache-invalidation bugs, resolving them with Vite configurations, significantly improving LCP and CLS scores.
+\end{itemize}
+ 
+\jobEntry{Senior Software Developer}{Aug 2018 - Feb 2023}{Sustainable Solutions (NZ) Ltd.}{Onsite}
+\begin{itemize}
+    \item Led the full-stack modernization of mSupply Mobile, a tablet-first, medical supply chain management app, using \textbf{React Native} and \textbf{RealmDB}.
+    \item Enhanced and contributed to the robust \textbf{offline-first architecture} ensuring full functionality in remote locations (warehouses, harbors) with intermittent or no internet access.
+    \item Achieved a \textbf{>50\% reduction in critical bugs} while delivering significantly faster data sync/load times.
+    \item Instituted faster, regular monthly release cycles, dramatically improving feature velocity and team agility.
+    \item Developed key components for "Conforma," a \textbf{GraphQL}-based regulatory form workflow management system, enabling critical features to handle complex dynamic forms and reducing custom form creation time.
+    \item Built multiple standalone \textbf{React} data reporting applications, streamlining data processes and \textbf{saving hundreds of hours of manual work weekly} for key clients.
+    \item Maintained and enhanced a customized \textbf{Grafana} fork (\textbf{Go/React}), building plugins to visualize pharmaceutical warehouse and \textbf{cold-chain data}, enabling significant reduction in waste.
+    \item Contributed to and built multiple features for the mSupply Desktop application (4D), developing robustness and optimizing functionalities.
+\end{itemize}
+
+\jobEntry{Senior Software Developer}{Aug 2015 - Aug 2018}{Zimris Technologies}{Onsite}
+\begin{itemize}
+    \item Led a 3-person development team and managed the full project lifecycle for a full modernization of a name suggestion website and online forum using \textbf{Vue.js, PHP (Laravel Lumen) and MySQL}.
+    \item Architected and \textbf{rewrote "Baby Name Genie"} (\textbf{Vue.js}, Lumen), enabling the high-traffic site to handle \textbf{hundreds of thousands of daily requests} where the original had failed.
+    \item Engineered a multi-tenant site generator (Cloud Carpenter) (PHP, Symfony), \textbf{automating a manual website creation process} to enable the client to scale and target \textbf{10x more clients}.
+\end{itemize}
+
+\jobEntry{Senior Software Developer}{Oct 2014 - Jul 2015}{Biz Technologies Pvt. Ltd.}{}
+\begin{itemize}
+     \item Engineered a modular travel booking platform using PHP (CodeIgniter, JQuery), used to generate multiple themed portal sites with features such as package booking, discounts, offers, itinerary, review, custom itinerary creation, payment, and notification.
+    \item Built WordPress websites for multiple local hotels, including PayPal integration, room booking, and availability monitoring capabilities provided through plugins.
+    \item Developed a complete website and doctor's availability and appointment booking system for Nidan Hospital using WordPress.
+\end{itemize}
+
+\jobEntry{Senior Web Developer (ASP.NET)}{Jul 2013 - Sep 2014}{Wise Yak Solutions Pvt. Ltd.}{}
+\begin{itemize}
+    \item Built custom modules, plugins, and themes for the Orchard CMS platform using \textbf{ASP.NET MVC4}, JQuery.
+    \item Engineered a complex data migration and accessibility solution; used \texttt{WGET} to scrape/sanitize content from a DMZ server, then stored and served images/data from \textbf{Azure CDN} and \textbf{Azure cloud servers}.
+\end{itemize}
+
+\jobEntry{Senior Software Developer}{Oct 2011 - Jun 2013}{Hitechvalley iNet Pvt. Ltd.}{}
+\begin{itemize}
+    \item Developed CMS and portal websites using PHP CodeIgniter, CakePHP frameworks and interactive Flash/ActionScript applications.
+\end{itemize}
+
+\jobEntry{Senior ActionScript/Flash Developer}{Jan 2010 - Sep 2011}{Grafi Offshore Nepal}{}
+\begin{itemize}
+    \item Architected and built the core OOP game engine from scratch in \textbf{ActionScript 3} for the "Bingel.be" gamified e-learning platform, replacing an unscalable ActionScript 2 prototype.
+    \item Engineered a modular framework to manage game state, asset/memory, lesson/XML adaptation (adapter pattern), and progress tracking, enabling the rapid development of \textbf{26+ games} for its initial release.
+    \item Solely developed the initial engine POC and MVP (engine + first game) within 4 months, navigating limited AS3 community support or frameworks.
+    \item Trained and mentored a team of 5+ developers in \textbf{ActionScript 3}, OOP principles, and \textbf{Design Patterns}, establishing the technical foundation for the project's success.
+\end{itemize}
+
+\jobEntry{Senior Flash/Software Developer}{Nov 2008 - Nov 2009}{Hitechvalley iNet Pvt. Ltd.}{}
+\begin{itemize}
+    \item Developed interactive Flash ActionScript websites and expanded skillset to include PHP, JavaScript, and CMS platforms.
+\end{itemize}
+
+\jobEntry{Freelance Flash Developer}{Jan 2006 - Nov 2008}{Self-Employed}{}
+\begin{itemize}
+    \item Created custom Flash/ActionScript applications and websites for various clients, honing skills in client communication and project management.
+\end{itemize}
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+{\bf Bachelor of Information Technology (BIT)} \textit{CGPA: 3.03} \hfill {2007} \\
+\href{https://kist.edu.np/program/bit}{KIST College of Information Technology (KIST-CIT)} \hfill {\textit{Affiliated to \href{https://www.purbanchaluniversity.edu.np/}{Purvanchal University, Nepal.}}} \\
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Additional Information} 
+\begin{itemize}
+    \itemsep -3pt {}
+    \item \textbf{Publications:} Technical Reviewer for "Mastering PHP Design Patterns" by Junade Ali (2016).
+    \item \textbf{Languages:} English (Full Professional), Nepali (Native), Hindi (Conversational Proficiency).
+    \item \textbf{Authorization:} US H1B visa holder, available for Corp-to-Corp (C2C) engagements.
+\end{itemize}
+\end{rSection}
+
+\end{document}

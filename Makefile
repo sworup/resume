@@ -1,6 +1,10 @@
 .PHONY: all clean
 
-all: build/sshakya-fullstack.pdf build/sshakya-Frontend.pdf
+all: build/sshakya-cv.pdf build/sshakya-fullstack.pdf build/sshakya-Frontend.pdf
+
+build/sshakya-cv.pdf: master-cv/SShakya-cv.tex master-cv/resume.cls
+	mkdir -p build
+	TEXINPUTS=./master-cv//: pdflatex -output-directory=build -jobname=sshakya-cv master-cv/SShakya-cv.tex
 
 build/sshakya-fullstack.pdf: full-stack/SShakya-FullStack.tex full-stack/resume.cls
 	mkdir -p build

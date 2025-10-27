@@ -18,23 +18,39 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
+\ProvidesClass{resume}[10/23/2025 v0.1 Resume class]
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
-
-\usepackage[parfill]{parskip} % Remove paragraph indentation
-\usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
-\usepackage{ifthen} % Required for ifthenelse statements
-
+\usepackage[letterpaper, left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry} % Document margins 
+\usepackage[T1]{fontenc} % Use T1 font encoding for pdflatex
+\usepackage{lmodern} % Use the Latin Modern font family
+\usepackage[english]{babel}
 \usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=blue,
-}
+\usepackage{textcomp} % Required for some symbols
+\usepackage{tabularx} % For skills table
+\usepackage{booktabs} % For \addlinespace
+\usepackage{enumitem} % For custom list spacing
+\usepackage{ragged2e} % For \raggedright in summary
 
-\pagestyle{empty} % Suppress page numbers
+% --- SETUP ---
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=blue,
+%     filecolor=magenta,      
+%     urlcolor=blue,
+%     pdftitle={Sworup Shakya - Master CV},
+%     pdfpagemode=FullScreen,
+% }
+\hypersetup{hidelinks} % For clickable links
+ 
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\pagestyle{empty} % No page numbers
+\setlength{\parindent}{0pt} % No paragraph indentation
+\setlist[itemize]{leftmargin=*, itemsep=-2pt, topsep=0pt, partopsep=0pt} % Tighter lists
+% Disable hyphenation by setting a very high penalty
+\lefthyphenmin=32
+\righthyphenmin=32
 
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
@@ -100,21 +116,6 @@
 %	SECTION FORMATTING
 %----------------------------------------------------------------------------------------
 
-% Defines the rSection environment for the large sections within the CV
-\newenvironment{rSection}[1]{ % 1 input argument - section name
-  \sectionskip
-  \MakeUppercase{{\bf #1}} % Section title
-  \sectionlineskip
-  \hrule % Horizontal line
-  \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{0em} % Margin within the section
-  }
-  \item[]%
-  \begingroup\raggedright\parindent=0pt\relax
-}{
-  \par\endgroup
-  \end{list}
-}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE FORMATTING
@@ -149,4 +150,32 @@
 \let\oldinput\input
 \renewcommand{\input}[1]{%
   \IfFileExists{frontend/#1}{\oldinput{frontend/#1}}{\oldinput{#1}}%
+}
+
+% --- HELPER COMMANDS ---
+% Redefine a command for section breaks
+\newenvironment{rSection}[1]{ % 1 input argument - section name
+  % \vspace{4pt} % Space before section
+  \sectionskip
+  \MakeUppercase{{\bf #1}} % Section title
+  \sectionlineskip
+  \hrule % Horizontal line
+  \begin{list}{}{ % List for each individual item in the section
+    \setlength{\leftmargin}{0em} % Margin within the section
+  }
+  \item[]%
+  \begingroup\raggedright\parindent=0pt\relax
+}{
+  \par\endgroup
+  \end{list}
+}
+
+% Define a command for job entries
+\newcommand{\jobEntry}[4]{
+  \par
+  \noindent
+  \textbf{\large #1} \hfill \textbf{#2} \\
+  \textit{#3} \hfill \textit{#4}
+  \par
+  \vspace{5pt}
 }
